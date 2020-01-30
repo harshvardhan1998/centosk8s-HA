@@ -3,7 +3,7 @@ This script will automate k8s HA installation using kubeadm.
 
 
 Prerequisite : OS- centos
-              password less authentication between machine.
+              password less authentication between Hosts
 cd /home/centos/centosk8s-HA               
 Run this script by -- 
 chmod +x final.sh
