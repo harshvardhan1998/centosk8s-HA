@@ -29,7 +29,7 @@ ssh centos@$host1 echo -n $(cat  join-cmd.sh) >  join-cmd.sh
 ssh centos@$host1 cat certificate.sh >>  join-cmd.sh
 
 
-scp  join-cmd.sh centos@$host2:/home/ubuntu
+scp  join-cmd.sh centos@$host2:/home/centos
 ssh centos@$host2 chmod +x  join-cmd.sh
 ssh centos@$host2  sudo /home/centos/join-cmd.sh 
 ssh centos@$host2 mkdir -p $HOME/.kube
@@ -37,7 +37,7 @@ ssh centos@$host2 sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
 ssh centos@$host2 sudo chown $(id -u):$(id -g) $HOME/.kube/config
 
 
-scp  join-cmd.sh  centos@$host3:/home/ubuntu
+scp  join-cmd.sh  centos@$host3:/home/centos
 ssh centos@$host3 chmod +x  join-cmd.sh
 ssh centos@$host3  sudo /home/centos/join-cmd.sh
 ssh centos@$host3 mkdir -p $HOME/.kube
