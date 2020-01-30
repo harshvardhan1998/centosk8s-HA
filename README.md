@@ -2,7 +2,7 @@
 This script will automate k8s HA installation using kubeadm.
 
 
-Prerequisite : OS- Ubuntu 
+Prerequisite : OS- centos
               password less authentication between machine.
 Run this script by -- 
 chmod +x final.sh
